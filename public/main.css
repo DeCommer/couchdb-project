@@ -8,9 +8,9 @@
   }
 
 body {
-    background-color: white;
-    color: rgb(61, 61, 61);
-    font-family: 'Open Sans', sans-serif;
+  background-color: white;
+  color: rgb(61, 61, 61);
+  font-family: 'Open Sans', sans-serif;
     
 }
 
@@ -85,7 +85,7 @@ header {
 
   .btn[type=submit] {
     background-color: #6ae07c;
-    transition: backgorund-color, .3s ease-in-out;
+    transition: background-color, .3s ease-in-out;
     color: #24502b;
     font-weight: 500;
     font-size: 1em;
@@ -170,6 +170,20 @@ table tr:hover {
     background-color: #fff6d9;
   }
 
+  footer {
+    text-align: center;
+    margin-top: 100px;
+  }
+
+  footer a {
+    color: skyblue;
+    text-decoration: none;
+    transition: background-color, .3s ease-in-out;
+  }
+
+  footer a:hover {
+    color: rgb(126, 188, 212);
+  }
 
   @media screen and (max-width: 1050px) {
 
@@ -214,6 +228,8 @@ table tr:hover {
       text-transform: uppercase;
     }
     
-    table td:last-child { border-bottom: 0; }
+    table td:last-child { 
+      border-bottom: 0; 
+    }
     
     }
