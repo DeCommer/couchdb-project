@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <title>CouchDB Project</title>
+</head>
+    <body>
+        <header>
+            <div class="hcol">
+                <div class="titleContainer">
+                    <div class="title">
+                    <img src="./img/190px-CouchDB.svg.png">
+                    <h1>CouchDB Project</h1>
+                    <p>Here is some text that will later describe this project. There is some styling to do first.</p>
+                </div>
+                </div>
+            </div>
+        <div class="hcol">
+        <div class="entryContainer">
+            <h2>Add a Contact</h2>
+            <form class="dataEntry" method="POST" action="/people/add">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">First Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" name="fname" placeholder="add name" required>
+                    </div>
+                </div>  
+                <div class="row">
+                        <div class="col-25">
+                            <label for="fname">Last Name</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" name="lname" placeholder="add name" required>
+                        </div>
+                    </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">Email</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" name="email" placeholder="add email" required>
+                    </div>
+                </div> 
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">Street</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" name="street" placeholder="add street" required>
+                    </div>
+                </div> 
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">City</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" name="city" placeholder="add city" required>
+                    </div>
+                </div> 
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">State</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" name="state" placeholder="add State" required>
+                    </div>
+                </div> 
+                <div class="row">
+                <input class="btn" type="submit" value="submit">
+            </div>
+            </form>
+        </div>
+        </div>
+        </header>
+        <%- include('./contacts.ejs') %>
+    </body>
+</html>
+
+
+
+
