@@ -1,6 +1,6 @@
 # couchdb-project
 
-Download and run nom install.
+Download and run npm install.
 
 Also install CouchDB.
 
