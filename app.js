@@ -29,7 +29,7 @@ const NodeCouchDB = require('node-couchdb');
 // });
 
 const couch = new NodeCouchDB({
-    host: 'localhost',
+    host: '10.0.0.6',
     port: 5984,
     // auth: {
     //     user: 'joseph',
