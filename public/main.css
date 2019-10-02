@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+/* @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap'); */
 
 * {
     box-sizing: border-box;
@@ -232,4 +232,31 @@ table tr:hover {
       border-bottom: 0; 
     }
     
-    }
+  }
+
+.search-container {
+  margin-top: 25px;
+}
+
+.search-container form {
+  margin: 0 auto;
+  width: 50%;
+  display: flex;
+}
+
+.search-container input[type=text] {
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+.search-container button {
+  background-color: #6ae07c;
+  transition: background-color, .3s ease-in-out;
+  color: #24502b;
+  font-weight: 500;
+  font-size: 1em;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}

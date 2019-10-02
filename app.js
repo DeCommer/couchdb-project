@@ -5,6 +5,7 @@ require('dotenv').config();
 const nano = require('nano')('http://localhost:5984');
 const people = nano.use('people')
 const app = express();
+const readline = require('readline')
 
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
@@ -61,7 +62,7 @@ app.post('/people/delete/:id', (req, res) => {
         })
         .catch(err => {
             console.log(err)
-        })
+    })
 })
 
 const port = process.env.PORT || 3000;

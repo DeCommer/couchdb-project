@@ -6,3 +6,4 @@ Also install CouchDB.
 
 Then connect with your DB in app.js
 
+# couch-contacts-nano
