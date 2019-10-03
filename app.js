@@ -16,17 +16,17 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
 app.get('/', (req, res) => {
-    people.list({include_docs: true})
-        .then((data) => {
-            // console.log(data.rows)
-            res.render('index', {
-                people:data.rows
-            })
+    people.list({include_docs: true, limit:10})
+    .then((data) => {
+        // console.log(data.rows)
+        res.render('index', {
+            people:data.rows
         })
-        .catch(err => {
-            console.log(err);
-        });
     })
+    .catch(err => {
+        console.log(err);
+    });
+})
 
 app.post('/people/add' , (req, res) => {
     const fname = req.body.fname;
@@ -45,13 +45,13 @@ app.post('/people/add' , (req, res) => {
             state: state
         }
     })
-        .then(() => {
-            res.redirect('/');
-        })
-        .catch(err => {
-            console.log(err);
-        })
+    .then(() => {
+        res.redirect('/');
     })
+    .catch(err => {
+        console.log(err);
+    })
+})
 
 app.post('/people/delete/:id', (req, res) => {
     let id = req.params.id;
