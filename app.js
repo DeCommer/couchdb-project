@@ -16,7 +16,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
 app.get('/', (req, res) => {
-    people.list({include_docs: true, limit:10})
+    people.list({include_docs: true, ascending:false, limit:50})
     .then((data) => {
         // console.log(data.rows)
         res.render('index', {
